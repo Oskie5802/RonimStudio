@@ -97,6 +97,12 @@ ul
         max-width: 75%; 
     }
 }
+@media screen and (max-width: 600px) 
+{
+    .zdj_0 {
+        max-width: 100%; 
+    }
+}
 @keyframes start
 {
     0%{
