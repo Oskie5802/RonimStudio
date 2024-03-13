@@ -99,7 +99,7 @@ ul
 }
 @media screen and (max-width: 600px) 
 {
-    .zdj_o {
+    #oz > img {
         max-width: 100%; 
     }
 }
