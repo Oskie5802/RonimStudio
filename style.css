@@ -6,7 +6,12 @@ body {
     color: #333;
     line-height: 1.6;
     animation: start 1s ease;
+
 }
+/* a,button,input
+{
+    cursor: pointer;
+} */
 
 header {
     background-color: #ff9f43;
@@ -46,13 +51,13 @@ nav a:hover {
 }
 
 section {
-    padding: 40px 20px;
+    padding: 40px 40px;
     opacity: 1;
     transform: translateY(20px);
     transition: opacity 0.6s ease-in-out, transform 0.5s ease-in-out;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -82,26 +87,38 @@ a
     color: #333;
     text-decoration: none;
 }
-#oz > img
+.zdj_o
 {
     width: 700px;
     height: 400px;
 }
+@media screen and (max-width: 600px)
+{
+    .zdj_o
+    {
+        width: 100%;
+    }
+    #game > img {
+        width: 75%; 
+    }
+    .kolko{
+        visibility: hidden;
+    }
+    .slider_container
+    {
+        width: 100%;
+    }
+    .slide 
+    {
+        flex: 0 0 100%; 
+        max-width: 100%; 
+        height: auto;
+        width: 10px;
+    }
+}
 ul
 {
-    list-style-type: none;
-}
-@media screen and (max-width: 600px) 
-{
-    #game > img {
-        max-width: 75%; 
-    }
-}
-@media screen and (max-width: 600px) 
-{
-    #oz > img {
-        max-width: 100%; 
-    }
+    list-style: none;
 }
 @keyframes start
 {
@@ -113,4 +130,69 @@ ul
         opacity: 1;
     }
 }
+.kolko
+{
+    width: 100px;
+    height: 100px;
+    background-color: #ff9f43;
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(50px);
+    pointer-events: none;
+
+}
+
+.download
+{
+    background-color: rgb(14, 148, 14);
+    border:  3px solid green;
+    width: 150px;
+    height: 60px;
+}
+.download:hover
+{
+    background-color:rgb(17, 163, 17) ;
+}
+.slider_container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.nastepna
+{
+    right: 0;
+}
+.poprzednia
+{
+    left: 0;
+}
+
+.poprzednia,.nastepna
+{
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+/* .kursor
+{
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    border: 1px solid #333;
+    z-index: 9999;
+    position: fixed;
+} */
+
 
