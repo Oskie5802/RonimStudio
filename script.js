@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function pobierz()
 {
-    window.location.href = 'The KULKA Game.zip';
+    window.location.href = 'The KULKA Game1.zip';
+    window.location.href = 'The KULKA Game2.zip';
 }
 // pobieranie kulki
 
