@@ -59,6 +59,13 @@ nav {
     font-weight: 700;
 }
 
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -164,6 +171,92 @@ footer {
 }
 
 .social-links a:hover {
+    color: var(--secondary-color);
+}
+
+.about {
+    padding: 4rem 0;
+    background-color: var(--bg-color);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: var(--text-color);
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.benefits-list li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.benefits-list li i {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.hero {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.about p,
+.benefits-list {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+footer {
+    padding: 2rem 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer .social-links {
+    margin-top: 1rem;
+}
+
+footer .social-links a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
     color: var(--secondary-color);
 }
 
