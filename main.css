@@ -274,6 +274,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .hamburger{
+        display:block;
+     } 
     .nav-links {
         position: fixed;
         right: -100%;
