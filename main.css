@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+do@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
     --primary-color: #6a11cb;
@@ -67,6 +67,8 @@ nav {
 .nav-links {
     display: flex;
     gap: 2rem;
+    opacity:75%;
+    z-index:3;
 }
 
 .nav-links a {
