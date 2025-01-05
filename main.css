@@ -54,7 +54,7 @@ nav {
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -369,5 +369,9 @@ footer {
 
     .nav-links a {
         padding: 1.5rem 0;
+    }
+    .cta-button
+    {
+        margin-top: 10px;
     }
 }
